@@ -332,6 +332,8 @@ Which of the following is not used to enforce a database constraint?
 - [ ] Primary keys
 
 <hr>
+#### Exactly! SQL aggregate functions are not used to enforce constraints, but to do calculations on data.
+
 
 #### Conforming with data types
 For demonstration purposes, I created a fictional database table that only holds three records. The columns have the data types date, integer, and text, respectively.
