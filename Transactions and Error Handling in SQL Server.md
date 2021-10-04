@@ -1,7 +1,8 @@
 1. Starting with error handling
 
 
-</> The TRY…CATCH syntax
+The TRY…CATCH syntax
+
 BEGIN TRY
     INSERT INTO products (product_name, stock, price)
         VALUES ('Trek Powerfly 5 - 2018', 10, 3499.99);
@@ -20,7 +21,8 @@ Which of the following is true about the syntax?
  This script isn’t correct because the error should be handled in the TRY block.
  
  
-</> Your first error-handling script
+
+Your first error-handling script
 Surround the constraint with a TRY block.
 
 Add the constraint to the products table.
@@ -62,7 +64,8 @@ BEGIN CATCH
 END CATCH
 
   
-</> Anatomy review
+
+Anatomy review
 When you execute the following script:
 
 INSERT INTO products (product_name, stock, price)
@@ -84,7 +87,8 @@ What are the different parts of the error you get, from left to right?
  Message level, severity level, state, line, and message text.
  Error number, line, state, severity level, and message text.
  Error number, severity level, state, line, and message text.
-</> Correcting compilation errors
+
+Correcting compilation errors
 Note: Error messages in DataCamp have different anatomy than in SQL Server, but as they show the error message, you won’t have any problem.
 
 Run the code to verify there are compilation errors.
@@ -126,13 +130,16 @@ END CATCH
 An error occurred inserting the product!
 
 
-</> Error function syntax
+
+Error function syntax
 Which of the following is true about the functions ERROR_NUMBER(), ERROR_SEVERITY(), ERROR_STATE(), ERROR_PROCEDURE(), ERROR_LINE(), and ERROR_MESSAGE()?
 
  These functions must be placed within the TRY block, just after the statement which may cause an error. If an error occurs, they return information about the error.
  These functions must be placed within the CATCH block. If an error occurs within the TRY block, they return information about the error.
  These functions must be placed within the CATCH block. They will return NULL values if there are no errors.
-</> Using error functions
+
+
+Using error functions
 Surround the operation with a TRY block.
 
 Surround the functions with a CATCH block.
@@ -156,7 +163,8 @@ number	severity_level	state	line	message
 
 
 
-</> Using error functions in a nested TRY…CATCH
+
+Using error functions in a nested TRY…CATCH
 Surround the error handling with a CATCH block.
 
 Insert ‘Error inserting a product’ in the errors table and surround this insertion with another TRY block.
